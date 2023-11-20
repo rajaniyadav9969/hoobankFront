@@ -1,0 +1,43 @@
+.headerSection {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+        padding: 0 2rem ;
+     
+    }
+    .navbarSection {
+        padding: 1.5rem 0;
+        justify-content: space-between;
+
+        img {
+            width: 124px;
+            height: 32px;
+        }
+
+        .navLinkSection {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            list-style-type: none;
+            li{
+                color: #ffff;
+                font-weight: 400;
+                cursor: pointer;
+                &:not(:last-child){
+                    margin-right: 2.5rem;
+                }
+                a{
+                    color: inherit;
+                    border: none;
+                }
+            }
+        }
+    }
+    .mobileLink{
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+}

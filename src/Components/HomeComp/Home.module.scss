@@ -1,0 +1,145 @@
+.homeSection {
+    padding-top: 4rem;
+    max-width: 1280px;
+    margin: 0 auto !important;
+    width: 100%;
+    .homeContent {
+        padding: 0;
+        @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+           padding: 0 2rem ;
+        
+       }
+        .accountContent {
+            background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+            border-radius: 10px;
+            padding: 6px 1rem;
+            width: fit-content;
+            margin-bottom: 8px;
+
+            .paragraph {
+                max-width: 100%;
+
+                span {
+                    color: rgb(255 255 255)
+                }
+            }
+
+        }
+
+        .paragraph {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            max-width: 80%;
+
+        }
+
+        .generationContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: 72px;
+            }
+
+            .getStarted {
+                margin-right: 1rem;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+
+            }
+        }
+
+        .heading {
+            color: rgb(255 255 255 /1);
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 100.8px;
+        }
+    }
+
+    .textGradent {
+        background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .getStartedSection {
+        background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+        padding: 2px;
+        border-radius: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+
+        .getStartedContent {
+            background: rgb(0 4 15 / 1) !important;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            .textGradent {
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            .getContent {
+                img {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .getStartedMob {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    .cardImg {
+        width: 100%;
+        height: 100%;
+    }
+    .countSection{
+         margin-bottom: 5rem;
+         padding: 4rem 0 0 0 ;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .singleContent{
+            display:flex ;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1 1 0%;
+            margin: 0.75rem;
+            h4{
+                font-size: 40.89px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 20.45px;
+                font-weight: 400;
+                margin-bottom: 0;
+                margin-left: 1rem;
+                text-transform: uppercase;
+            }
+         }
+    }
+
+}

@@ -1,0 +1,77 @@
+.fsection {
+    padding: 4rem 0;
+    .fSectionInfo {
+        h2 {
+            font-size: 48px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 76.8px;
+        }
+
+        p {
+            max-width: 70%;
+
+        }
+
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        line-height: 30.8px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .sectionImg {
+        padding-left: 2.5rem;
+
+        .featureCard {
+            padding: 1.5rem;
+            border-radius: 20px;
+            display: flex;
+
+            &:hover {
+                background: linear-gradient(144.39deg,
+                        #ffffff -278.56%,
+                        #6d6d6d -78.47%,
+                        #11101d 91.61%);
+                box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+            }
+
+            // align-items: center;
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            .imgContent {
+                background-color: rgba(9, 151, 124, 0.1);
+                border-radius: 100%;
+                width: 64px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .cardImg {
+                    width: 50%;
+                    height: 50%;
+                    object-fit: contain;
+                }
+            }
+
+            .cardContent {
+                margin-left: 0.75rem;
+                flex: 1 1 0%;
+
+                h4 {
+                    color: #fff;
+                    line-height: 23.4px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+    }
+}
