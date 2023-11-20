@@ -1,0 +1,10 @@
+.footerSection{
+    .footerLinkSection{
+        display: flex;
+        // justify-content: space-between;
+        .footerLinkContent{
+            display: flex;
+            justify-content: space-between
+        }
+    }
+}

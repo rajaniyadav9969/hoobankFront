@@ -4,6 +4,10 @@ import Home from './Components/HomeComp/Home';
 import "bootstrap/dist/css/bootstrap.min.css"
 import NavBar from './Components/NavBar/NavBar';
 import FeatureComp from './Components/Features/FeatureComp';
+import Product from './Components/Product/Product';
+import CardDeal from './Components/CardDeal/CardDeal';
+import Client from './Components/Client/Client';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
       <Home />
       <div className="containers">
         <FeatureComp />
+        <Product/>
+        <CardDeal/>
+        <Client/>
+        <Footer/>
       </div>
     </div>
   );

@@ -6,8 +6,7 @@
     .homeContent {
         padding: 0;
         @media only screen and (min-width: 1030px) and (max-width: 1566px) {
-           padding: 0 2rem ;
-        
+           padding: 0 2rem ; 
        }
         .accountContent {
             background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
@@ -16,8 +15,9 @@
             width: fit-content;
             margin-bottom: 8px;
 
-            .paragraph {
+            .paragraph1{
                 max-width: 100%;
+                line-height: 0;
 
                 span {
                     color: rgb(255 255 255)
@@ -26,12 +26,6 @@
 
         }
 
-        .paragraph {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 18px;
-            max-width: 80%;
-
-        }
 
         .generationContent {
             display: flex;
@@ -39,7 +33,7 @@
             align-items: center;
 
             h1 {
-                font-size: 72px;
+                font-size: 4.5rem;
             }
 
             .getStarted {
@@ -55,7 +49,7 @@
         .heading {
             color: rgb(255 255 255 /1);
             font-weight: 600;
-            font-size: 70px;
+            font-size: 4.375rem;
             line-height: 100.8px;
         }
     }
@@ -73,8 +67,8 @@
         justify-content: center;
         display: flex;
         align-items: center;
-        width: 140px;
-        height: 140px;
+        width: 8.75rem;
+        height: 8.75rem;
 
         .getStartedContent {
             background: rgb(0 4 15 / 1) !important;
@@ -88,13 +82,13 @@
 
             .textGradent {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 1.125rem;
             }
 
             .getContent {
                 img {
-                    width: 23px;
-                    height: 23px;
+                    width: 1.438rem;
+                    height: 1.438rem;
                 }
             }
 
@@ -122,6 +116,11 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
+         @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+            padding: 4rem 2rem 3rem 2rem ;
+            margin-bottom: 0;
+         
+        }
          .singleContent{
             display:flex ;
             justify-content: flex-start;
@@ -129,11 +128,11 @@
             flex: 1 1 0%;
             margin: 0.75rem;
             h4{
-                font-size: 40.89px;
+                font-size: 2.556rem;
                 font-weight: bold;
             }
             p{
-                font-size: 20.45px;
+                font-size: 1.278rem;
                 font-weight: 400;
                 margin-bottom: 0;
                 margin-left: 1rem;

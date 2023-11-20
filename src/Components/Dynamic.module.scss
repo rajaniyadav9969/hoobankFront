@@ -1,0 +1,24 @@
+.heading {
+    line-height: 1.57;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #fff;
+    // margin-bottom: 0;
+
+}
+
+.paragraph {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1.125rem;
+    max-width: 80%;
+    margin-bottom: 0;
+}
+.paddingSection{
+    padding: 4rem 0;
+    @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+        padding: 3rem 2rem;
+
+    }
+}

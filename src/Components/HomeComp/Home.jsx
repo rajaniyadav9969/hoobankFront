@@ -3,6 +3,9 @@ import { discount, robot } from "../../assets";
 import style from './Home.module.scss'
 import GetStarted from './GetStarted';
 import { stats } from '../../constants';
+import dLayout from '../Dynamic.module.scss'
+
+
 const Home = () => {
     return (
 
@@ -10,7 +13,7 @@ const Home = () => {
             <div className={`col-md-6 ${style.homeContent}`}>
                 <div className={`d-flex align-items-center ${style.accountContent}`}>
                     <img src={discount} alt="discount" className={style.responsiveimg} />
-                    <p className={`${style.paragraph} ms-2 mb-0`}>
+                    <p className={`${style.paragraph1} ${dLayout.paragraph} ms-2 mb-0`}>
                         <span className="">20%</span> Discount For{" "}
                         <span className="">1 Month</span> Account
                     </p>
@@ -27,7 +30,7 @@ const Home = () => {
                 <h1 className={style.heading}>
                     Payment Method.
                 </h1>
-                <p className={`${style.paragraph} mt-5`}>
+                <p className={`${dLayout.paragraph} mt-5`}>
                     Our team of experts uses a methodology to identify the credit cards
                     most likely to fit your needs. We examine annual percentage rates,
                     annual fees.

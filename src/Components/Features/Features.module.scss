@@ -1,27 +1,20 @@
 .fsection {
-    padding: 4rem 0;
+
     .fSectionInfo {
-        h2 {
-            font-size: 48px;
-            color: #fff;
-            font-weight: bold;
-            line-height: 76.8px;
-        }
+        // h2 {
+        //     font-size: 48px;
+        //     color: #fff;
+        //     font-weight: 600;
+        //     line-height: 76.8px;
+        // }
 
-        p {
-            max-width: 70%;
+        // p {
+        //     // max-width: 70%;
 
-        }
+        // }
 
     }
 
-    p {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 18px;
-        line-height: 30.8px;
-        font-weight: 400;
-        margin-bottom: 0;
-    }
 
     .sectionImg {
         padding-left: 2.5rem;
@@ -64,11 +57,16 @@
                 margin-left: 0.75rem;
                 flex: 1 1 0%;
 
+                p {
+                    line-height: unset;
+                    max-width: 100%;
+                }
+
                 h4 {
                     color: #fff;
-                    line-height: 23.4px;
+                    // line-height: 23.4px;
                     font-weight: 600;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     margin-bottom: 1.25rem;
                 }
             }

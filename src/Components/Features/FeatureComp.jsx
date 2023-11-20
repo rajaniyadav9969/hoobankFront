@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 // import { layout } from "../style";
 // import Button from "./Button";
 import fStyle from './Features.module.scss'
+import dLayout from '../Dynamic.module.scss'
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={fStyle.featureCard}>
@@ -10,10 +11,10 @@ const FeatureCard = ({ icon, title, content, index }) => (
       <img src={icon} alt="star" className={fStyle.cardImg} />
     </div>
     <div className={fStyle.cardContent}>
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+      <h4 className="mb-1">
         {title}
       </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+      <p className={dLayout.paragraph}>
         {content}
       </p>
     </div>
@@ -21,13 +22,13 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const FeatureComp = () =>  (
-  <section id="features" className={`row ${fStyle.fsection}`}>
+  <section id="features" className={`row ${fStyle.fsection} ${dLayout.paddingSection}`}>
     <div className={`col-md-6 ${fStyle.fSectionInfo}`}>
-      <h2 className={fStyle.heading2}>
+      <h2 className={dLayout.heading}>
         You do the business, <br/> we’ll handle
         the money.
       </h2>
-      <p className={`${fStyle.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${dLayout.paragraph}  mt-5`}>
         With the right credit card, you can improve your financial life by
         building credit, earning rewards and saving money. But with hundreds
         of credit cards on the market.
