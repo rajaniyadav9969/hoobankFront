@@ -1,5 +1,7 @@
 .productSection{
-    flex-direction: column-reverse;
+@media screen and (max-width:768px) {
+        flex-direction: column-reverse;
+    }
 }
 .sectionReverse {
     align-items: center;
