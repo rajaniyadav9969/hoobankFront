@@ -8,7 +8,6 @@ import dLayout from '../Dynamic.module.scss'
 
 const Home = () => {
     return (
-
         <div id='home' className={`row ${style.homeSection}`}>
             <div className={`col-md-6 ${style.homeContent}`}>
                 <div className={`d-flex align-items-center ${style.accountContent}`}>
@@ -30,19 +29,18 @@ const Home = () => {
                 <h1 className={style.heading}>
                     Payment Method.
                 </h1>
-                <p className={`${dLayout.paragraph} mt-5`}>
+                <p className={`${dLayout.paragraph} mt-4`}>
                     Our team of experts uses a methodology to identify the credit cards
                     most likely to fit your needs. We examine annual percentage rates,
                     annual fees.
                 </p>
             </div>
-            <div className="col-md-6 p-0">
+            <div className={`col-md-6 p-0 ${style.generationImgSection}`}>
                 <img src={robot} alt="billing" className={style.cardImg} />
-
                 {/* gradient start */}
-                <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-                <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-                <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+                <div className={style.gradient1} />
+                <div className={style.gradient2} />
+                <div className={style.gradient3} />
                 {/* gradient end */}
             </div>
 
@@ -52,7 +50,7 @@ const Home = () => {
             <section className={style.countSection} >
                 {stats.map((stat) => (
                     <div key={stat.id} className={style.singleContent} >
-                        <h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">
+                        <h4 className=" text-white">
                             {stat.value}
                         </h4>
                         <p className={style.textGradent}>

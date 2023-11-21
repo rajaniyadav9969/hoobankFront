@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { close, logo, menu } from "../../assets";
 import { navLinks } from "../../constants";
 import header from './NavBar.module.scss'
@@ -7,47 +7,47 @@ import { NavLink } from "react-bootstrap";
 const NavBar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
+ 
   return (
     <div className={header.headerSection}>
-      <div style={{width: "100%"}}>
-        <nav className={`row ${header.navbarSection}`}>
-          <div className="col-md-4" >
+      <div style={{ width: "100%" }}>
+        <nav className={header.navbarSection}>
 
-          <img src={logo} alt="hoobank" />
+          <div className="" >
+
+            <img src={logo} alt="hoobank" />
           </div>
 
-          <ul className={`col-md-8 ${header.navLinkSection}`}>
+          <ul className={header.navLinkSection}>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"
-                  } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+                // className={`${active === nav.title ? header.activeText : header.navLinkText} `}
+                className={`${active === nav.title ? header.activeText : header.navLinkText}`}
                 onClick={() => setActive(nav.title)}
               >
                 <NavLink href={`#${nav.id}`}>{nav.title}</NavLink>
               </li>
             ))}
           </ul>
-
+         
           <div className={header.mobileLink}>
             <img
               src={toggle ? close : menu}
               alt="menu"
-              className="w-[28px] h-[28px] object-contain"
+              className=""
               onClick={() => setToggle(!toggle)}
             />
 
             <div
-              className={`${!toggle ? "hidden" : "flex"
-                } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+              // className={`${!toggle ? "d-none" : "d-flex"}`}
+              className={`${!toggle ? header.sideBar +" " + 'd-none'  : header.sideBar  +" " + 'd-flex'}`}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (
                   <li
                     key={nav.id}
-                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"
-                      } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                    className={`${active === nav.title ? header.activeText : header.navLinkText} ${index === navLinks.length - 1 ? "mb-0" : "mb-3"}`}
                     onClick={() => setActive(nav.title)}
                   >
                     <a href={`#${nav.id}`}>{nav.title}</a>

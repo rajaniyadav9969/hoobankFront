@@ -4,7 +4,7 @@ import dLayout from '../Dynamic.module.scss'
 
 
 const Product = () => (
-  <section id="product" className={`row ${layout.sectionReverse} ${dLayout.paddingSection}`}>
+  <section id="product" className={`row ${layout.sectionReverse} ${dLayout.paddingSection} ${layout.productSection}`}>
     <div className={`col-md-6 ${layout.sectionImgReverse}`}>
       <img src={bill} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
@@ -16,7 +16,7 @@ const Product = () => (
 
     <div className={`col-md-6 ${layout.sectionInfo}`}>
       <h2 className={dLayout.heading}>
-        Easily control your <br className="sm:block hidden" /> billing &
+        Easily control your billing &
         invoicing
       </h2>
       <p className={`mt-4 ${dLayout.paragraph}`}>
@@ -25,7 +25,7 @@ const Product = () => (
         placerat.
       </p>
 
-      <div className={`mt-5 ${layout.appsImgSection}`}>
+      <div className={` ${layout.appsImgSection}`}>
         <img src={apple} alt="google_play" className="" />
         <img src={google} alt="google_play" className="" />
       </div>

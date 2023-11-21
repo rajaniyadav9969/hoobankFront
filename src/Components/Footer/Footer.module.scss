@@ -1,10 +1,105 @@
-.footerSection{
-    .footerLinkSection{
+.footerSection {
+    padding-bottom: 3rem;
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 1.5rem;
+    }
+
+    .footerLinkSection {
         display: flex;
         // justify-content: space-between;
-        .footerLinkContent{
+        width: 100%;
+        flex: 1;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .logoSection {
+            margin-right: 2.5rem;
+
+            @media screen and (max-width:768px) {
+                margin-right: 0;
+            }
+
+            p {
+                max-width: 60%;
+
+                @media screen and (max-width:768px) {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .footerLinkContent {
             display: flex;
-            justify-content: space-between
+            justify-content: space-between;
+            width: 100%;
+            flex: 1.5;
+
+            @media screen and (max-width:768px) {
+                margin-top: 2rem;
+                flex-wrap: wrap;
+            }
+
+            .footerCategory {
+                @media screen and (max-width:768px) {
+                    margin: 1rem 0;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                    margin-bottom: 0;
+                    line-height: 1.5;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        color: rgba(255, 255, 255, 0.7);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: rgb(0 246 255 / 1)
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .copyrightContent {
+        padding-top: 1.4rem;
+        border-top: 1px solid rgb(63 62 69);
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 0;
+
+        }
+
+        .socialMediaLink {
+            @media screen and (max-width: 768px) {
+                margin-top: 1rem;
+            }
+
+            img {
+                cursor: pointer;
+            }
         }
     }
 }

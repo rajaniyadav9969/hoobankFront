@@ -17,3 +17,9 @@ code {
   margin: 0 auto !important;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .containers{
+    padding-left: 1.5rem ;
+    padding-right: 1.5rem ;
+  }
+}

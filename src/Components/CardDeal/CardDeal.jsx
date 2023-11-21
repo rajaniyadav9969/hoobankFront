@@ -2,11 +2,12 @@ import { card } from "../../assets";
 import Button from "../Button/Button";
 import layout from '../Product/Product.module.scss'
 import dLayout from '../Dynamic.module.scss'
+
 const CardDeal = () => (
   <section className={`row ${layout.sectionReverse} ${dLayout.paddingSection}`}>
     <div  className={`col-md-6 ${layout.sectionInfo}`}>
       <h2 className={dLayout.heading}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
+        Find a better card deal  in few easy
         steps.
       </h2>
       <p className={`mt-4 ${dLayout.paragraph}`}>

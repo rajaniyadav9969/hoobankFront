@@ -18,13 +18,20 @@
         align-items: center;
         margin-bottom: 4rem;
 
+        @media screen and (max-width: 768px) {
+            margin-bottom: 1.5rem;
+        }
 
     }
 
     .cardSection {
         display: flex;
         justify-content: space-between;
-        padding: 3rem 0;
+        padding-bottom: 3rem;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 1.5rem;
+            flex-direction: column;
+        }
 
         .singleCard {
             margin: 1rem 2.5rem 1rem 0;
@@ -33,6 +40,11 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
+                
+            }
 
             &:hover {
                 border-radius: 20px;
@@ -60,6 +72,7 @@
                 img {
                     height: 3rem;
                     width: 3rem;
+                    
                 }
 
                 h4 {
@@ -86,10 +99,16 @@
     .singleClientLogo {
         min-width: 12rem;
         flex: 1 1 0%;
+        @media screen and (max-width:768px){
+            min-width: 120px;
+        }
 
         img {
             width: 12rem;
             object-fit: contain;
+            @media screen and (max-width:768px){
+                width: 100px;
+            }
         }
     }
 }
@@ -101,18 +120,32 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-    background: linear-gradient(
-        -168.39deg,
-        #ffffff -278.56%,
-        #6d6d6d -78.47%,
-        #11101d 91.61%
-      );
-      border-radius: 1.25rem;
-
+    background: linear-gradient(-168.39deg,
+            #ffffff -278.56%,
+            #6d6d6d -78.47%,
+            #11101d 91.61%);
+    border-radius: 1.25rem;
+    @media screen and (max-width:768px){
+       flex-direction: column;
+       padding: 1rem 1.5rem;
+       margin: 1.5rem 0;
+    }
 
     p {
 
         margin-top: 1.2rem;
         max-width: 60%;
+        @media screen and (max-width:768px){
+            max-width: 100%;
+         }
+    }
+    .btnSection{
+        button{
+            margin-top: 0;
+            @media screen and (max-width:768px) {
+                margin-top: 2.5rem;
+
+            }
+        }
     }
 }

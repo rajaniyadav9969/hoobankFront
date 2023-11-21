@@ -3,7 +3,11 @@
     font-weight: 600;
     font-size: 3rem;
     color: #fff;
-    // margin-bottom: 0;
+    margin-bottom: 0;
+    @media screen and (max-width: 768px) {
+        line-height: 1.4;
+        font-size: 2.5rem;
+    }
 
 }
 
@@ -14,11 +18,17 @@
     font-size: 1.125rem;
     max-width: 80%;
     margin-bottom: 0;
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 .paddingSection{
     padding: 4rem 0;
     @media only screen and (min-width: 1030px) and (max-width: 1566px) {
         padding: 3rem 2rem;
 
+    }
+    @media screen and (max-width: 768px) {
+        padding: 1.5rem 0;
     }
 }

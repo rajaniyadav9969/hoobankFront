@@ -28,7 +28,7 @@ const FeatureComp = () =>  (
         You do the business, <br/> we’ll handle
         the money.
       </h2>
-      <p className={`${dLayout.paragraph}  mt-5`}>
+      <p className={`${dLayout.paragraph}  mt-4`}>
         With the right credit card, you can improve your financial life by
         building credit, earning rewards and saving money. But with hundreds
         of credit cards on the market.

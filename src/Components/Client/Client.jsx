@@ -13,7 +13,7 @@ const Client = () => (
                 <h2 className={`col-md-6 ${dLayout.heading}`}>
                     What People are <br className="sm:block hidden" /> saying about us
                 </h2>
-                <div className="col-md-6">
+                <div className="col-md-6 mt-4">
                     <p className={dLayout.paragraph}>
                         Everything you need to accept card payments and grow your business
                         anywhere on the planet.
@@ -49,14 +49,14 @@ const Client = () => (
         <div className="my-4">
             <div className={cStyle.clientLogoSection}>
                 {clients.map((client) => (
-                    <div key={client.id} className={`${cStyle.singleClientLogo} m-5`}>
-                        <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain" />
+                    <div key={client.id} className={`${cStyle.singleClientLogo} m-4`}>
+                        <img src={client.logo} alt="client_logo" className="" />
                     </div>
                 ))}
             </div>
         </div>
         <section className={cStyle.tryOurServices}>
-            <div className="flex-1 flex flex-col">
+            <div className="">
                 <h2 className={dLayout.heading}>Let’s try our service now!</h2>
                 <p className={`${dLayout.paragraph} `}>
                     Everything you need to accept card payments and grow your business
@@ -64,7 +64,7 @@ const Client = () => (
                 </p>
             </div>
 
-            <div className={`${cStyle.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
+            <div className={cStyle.btnSection}>
                 <Button />
             </div>
         </section>
