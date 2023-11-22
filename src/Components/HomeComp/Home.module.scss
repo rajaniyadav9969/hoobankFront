@@ -1,229 +1,257 @@
+.homeBanner {}
+
 .homeSection {
-    padding-top: 4rem;
-    max-width: 1280px;
-    margin: 0 auto !important;
-    width: 100%;
+    background-image: url('../../assets/robo-hand.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    // transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    // padding: 220px 0px 125px 0px;
+    padding-top: 11rem;
+    padding-bottom: 4rem;
 
-    @media screen and (max-width: 768px) {
-        padding-top: 1.5rem;
-    }
-
-    .homeContent {
-        padding: 0;
-
-        @media only screen and (min-width: 1030px) and (max-width: 1566px) {
-            padding: 0 2rem;
-        }
+    .homeTopSection {
+        max-width: 1380px;
+        margin: 0 auto !important;
+        width: 100%;
 
         @media screen and (max-width: 768px) {
-            padding: 0 1.5rem 2.5rem 1.5rem;
+            padding-top: 1.5rem;
         }
 
-        .accountContent {
-            background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
-            border-radius: 10px;
-            padding: 6px 1rem;
-            width: fit-content;
-            margin-bottom: 8px;
+        .homeContent {
+            padding: 0;
 
-            .paragraph1 {
-                max-width: 100%;
-                line-height: 0;
-
-                @media screen and (max-width: 768px) {
-                    line-height: 1.57;
-                }
-
-                span {
-                    color: rgb(255 255 255)
-                }
+            @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+                padding: 0 2rem;
             }
-
-        }
-
-
-        .generationContent {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            h1 {
-                font-size: 4.5rem;
-
-                @media screen and (max-width :768px) {
-                    font-size: 3.25rem;
-
-                }
-            }
-
-            .getStarted {
-                margin-right: 1rem;
-
-                @media screen and (max-width: 768px) {
-                    display: none;
-                }
-
-            }
-        }
-
-        .heading {
-            color: rgb(255 255 255 /1);
-            font-weight: 600;
-            font-size: 4.375rem;
-            line-height: 100.8px;
 
             @media screen and (max-width: 768px) {
-                font-size: 3.25rem;
-                line-height: 75px;
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    .textGradent {
-        background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .getStartedSection {
-        background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
-        padding: 2px;
-        border-radius: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        width: 8.75rem;
-        height: 8.75rem;
-
-        .getStartedContent {
-            background: rgb(0 4 15 / 1) !important;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            flex-direction: column;
-
-            .textGradent {
-                font-weight: 500;
-                font-size: 1.125rem;
+                padding: 0 1.5rem 2.5rem 1.5rem;
             }
 
-            .getContent {
-                img {
-                    width: 1.438rem;
-                    height: 1.438rem;
+            .accountContent {
+                background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+                border-radius: 10px;
+                padding: 6px 1rem;
+                width: fit-content;
+                margin-bottom: 1.5rem;
+
+                .paragraph1 {
+                    max-width: 100%;
+                    line-height: 0;
+
+                    @media screen and (max-width: 768px) {
+                        line-height: 1.57;
+                    }
+
+                    span {
+                        color: rgb(255 255 255)
+                    }
                 }
+
+            }
+
+
+            .generationContent {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h1 {
+                    font-size: 4.5rem;
+
+                    @media screen and (max-width :768px) {
+                        font-size: 3.25rem;
+
+                    }
+                }
+
+                .getStarted {
+                    margin-right: 1rem;
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+
+                }
+
+                // .heading {
+                //     padding-top: 1.5rem;
+                // }
             }
 
             p {
-                margin-bottom: 0;
+                max-width: 60%;
+            }
+
+            .heading {
+                color: rgb(255 255 255 /1);
+                font-weight: 600;
+                font-size: 4.375rem;
+                // line-height: 100.8px;
+                // max-width: 70%;
+                // margin-bottom: 0;
+                line-height: 1.1;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 3.25rem;
+                    line-height: 75px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .getStartedSection {
+            background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+            padding: 2px;
+            border-radius: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 8.75rem;
+            height: 8.75rem;
+
+            .getStartedContent {
+                background: rgb(0 4 15 / 1) !important;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+
+                .textGradent {
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                }
+
+                .getContent {
+                    img {
+                        width: 1.438rem;
+                        height: 1.438rem;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .getStartedMob {
+            display: none;
+
+            @media screen and (max-width: 768px) {
+                display: flex;
+                justify-content: center;
+                margin-top: 2.5rem;
+
+            }
+        }
+
+        .generationImgSection {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .cardImg {
+                width: 100%;
+                height: 100%;
+            }
+
+            .gradient1 {
+                background: linear-gradient(90deg, #fb00f6 0%, #eb00e8 100%);
+                filter: blur(900px);
+                width: 40%;
+                height: 35%;
+                top: 0;
+                position: absolute;
+            }
+
+            .gradient2 {
+                background: rgba(255, 255, 255, 0.6);
+                filter: blur(750px);
+                border-radius: 100%;
+                width: 80%;
+                height: 80%;
+                bottom: 10rem;
+                position: absolute;
+            }
+
+            .gradient3 {
+                background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+                filter: blur(123px);
+                width: 50%;
+                height: 50%;
+                right: 5rem;
+                bottom: 5rem;
+                position: absolute;
             }
         }
     }
 
-    .getStartedMob {
-        display: none;
 
-        @media screen and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
-            margin-top: 2.5rem;
+}
 
-        }
+.textGradent {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.countSection {
+    padding: 4rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1380px;
+    margin: 0 auto ;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+        padding: 4rem 2rem 3rem 2rem;
+        margin-bottom: 0;
+
     }
 
-    .generationImgSection {
-        position: relative;
+    @media screen and (max-width: 768px) {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+
+    }
+
+    .singleContent {
         display: flex;
         justify-content: center;
-
-        .cardImg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .gradient1 {
-            background: linear-gradient(90deg, #fb00f6 0%, #eb00e8 100%);
-            filter: blur(900px);
-            width: 40%;
-            height: 35%;
-            top: 0;
-            position: absolute;
-        }
-
-        .gradient2 {
-            background: rgba(255, 255, 255, 0.6);
-            filter: blur(750px);
-            border-radius: 100%;
-            width: 80%;
-            height: 80%;
-            bottom: 10rem;
-            position: absolute;
-        }
-
-        .gradient3 {
-            background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
-            filter: blur(123px);
-            width: 50%;
-            height: 50%;
-            right: 5rem;
-            bottom: 5rem;
-            position: absolute;
-        }
-    }
-
-
-    .countSection {
-        margin-bottom: 5rem;
-        padding: 4rem 0 0 0;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
+        flex: 1 1;
+        margin: 0.75rem;
+        flex-direction: column;
 
-
-        @media only screen and (min-width: 1030px) and (max-width: 1566px) {
-            padding: 4rem 2rem 3rem 2rem;
+        h4 {
+            font-size: 2.556rem;
+            font-weight: bold;
+            color: #fff;
             margin-bottom: 0;
 
-        }
-
-        @media screen and (max-width: 768px) {
-            padding: 1.5rem 1.5rem 0 1.5rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            
-        }
-
-        .singleContent {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex: 1 1 0%;
-            margin: 0.75rem;
-
-            h4 {
-                font-size: 2.556rem;
-                font-weight: bold;
-                color: #fff;
-                @media screen and (max-width: 768px) {
-                    font-size: 1.931rem;
-                }
+            @media screen and (max-width: 768px) {
+                font-size: 1.931rem;
             }
+        }
 
-            p {
-                font-size: 1.278rem;
-                font-weight: 400;
-                margin-bottom: 0;
-                margin-left: 1rem;
-                text-transform: uppercase;
-                @media screen and (max-width: 768px) {
-                    font-size: 0.966rem;
-                }
+        p {
+            font-size: 1.278rem;
+            font-weight: 400;
+            margin-bottom: 0;
+            // margin-left: 1rem;
+            text-transform: uppercase;
+
+            @media screen and (max-width: 768px) {
+                font-size: 0.966rem;
             }
         }
     }
-
 }

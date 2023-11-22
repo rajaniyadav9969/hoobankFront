@@ -5,7 +5,9 @@ import dLayout from '../Dynamic.module.scss'
 
 const CardDeal = () => (
   <section className={`row ${layout.sectionReverse} ${dLayout.paddingSection}`}>
-    <div  className={`col-md-6 ${layout.sectionInfo}`}>
+    <div  className={`col-md-6 ${layout.sectionInfo}`}
+    data-aos="fade-right"
+    data-aos-duration="2000">
       <h2 className={dLayout.heading}>
         Find a better card deal  in few easy
         steps.
@@ -16,7 +18,9 @@ const CardDeal = () => (
       </p>
       <Button style={`mt-10`} />
     </div>
-    <div className={`col-md-6 ${layout.sectionImgReverse}`}>
+    <div className={`col-md-6 ${layout.sectionImgReverse}`}
+     data-aos="zoom-in"
+      data-aos-duration="2000">
       <img src={card} alt="billing" />
     </div>
   </section>

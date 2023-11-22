@@ -5,16 +5,20 @@ import dLayout from '../Dynamic.module.scss'
 
 const Product = () => (
   <section id="product" className={`row ${layout.sectionReverse} ${dLayout.paddingSection} ${layout.productSection}`}>
-    <div className={`col-md-6 ${layout.sectionImgReverse}`}>
+    <div className={`col-md-6 ${layout.sectionImgReverse}`}
+     data-aos="zoom-in"
+      data-aos-duration="2000">
       <img src={bill} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
       {/* gradient start */}
-      <div className={layout.gradient} />
-      <div className={layout.gradient2} />
+      {/* <div className={layout.gradient} />
+      <div className={layout.gradient2} /> */}
       {/* gradient end */}
     </div>
 
-    <div className={`col-md-6 ${layout.sectionInfo}`}>
+    <div className={`col-md-6 ${layout.sectionInfo}`}
+      data-aos="fade-left"
+      data-aos-duration="2000">
       <h2 className={dLayout.heading}>
         Easily control your billing &
         invoicing
@@ -25,7 +29,7 @@ const Product = () => (
         placerat.
       </p>
 
-      <div className={` ${layout.appsImgSection}`}>
+      <div className={` ${layout.appsImgSection}`} >
         <img src={apple} alt="google_play" className="" />
         <img src={google} alt="google_play" className="" />
       </div>

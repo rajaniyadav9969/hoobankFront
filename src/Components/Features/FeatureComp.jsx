@@ -6,7 +6,9 @@ import fStyle from './Features.module.scss'
 import dLayout from '../Dynamic.module.scss'
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={fStyle.featureCard}>
+  <div className={fStyle.featureCard} data-aos="zoom-in"
+  //  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000">
     <div className={fStyle.imgContent}>
       <img src={icon} alt="star" className={fStyle.cardImg} />
     </div>
@@ -21,11 +23,13 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const FeatureComp = () =>  (
-  <section id="features" className={`row ${fStyle.fsection} ${dLayout.paddingSection}`}>
-    <div className={`col-md-6 ${fStyle.fSectionInfo}`}>
+const FeatureComp = () => (
+  <section id="features" className={`row ${fStyle.fsection} ${dLayout.paddingSection}`} >
+    <div className={`col-md-6 ${fStyle.fSectionInfo}`} data-aos="fade-right"
+      //  data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
       <h2 className={dLayout.heading}>
-        You do the business, <br/> we’ll handle
+        You do the business, <br /> we’ll handle
         the money.
       </h2>
       <p className={`${dLayout.paragraph}  mt-4`}>
@@ -37,7 +41,7 @@ const FeatureComp = () =>  (
       <Button />
     </div>
 
-    <div className={`col-md-6 ${fStyle.sectionImg} flex-col`}>
+    <div className={`col-md-6 ${fStyle.sectionImg} flex-col`} >
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}

@@ -1,15 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
 import Home from './Components/HomeComp/Home';
-import "bootstrap/dist/css/bootstrap.min.css"
 import NavBar from './Components/NavBar/NavBar';
 import FeatureComp from './Components/Features/FeatureComp';
 import Product from './Components/Product/Product';
 import CardDeal from './Components/CardDeal/CardDeal';
 import Client from './Components/Client/Client';
 import Footer from './Components/Footer/Footer';
+import "bootstrap/dist/css/bootstrap.min.css"
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function App() {
+  useEffect(() => {
+    AOS.init({once: false});
+    setTimeout(()=>{
+      AOS.refresh();
+    }, 2000)
+  }, []);
   return (
     <div className="App " style={{}}>
       {/* <header className="App-header">

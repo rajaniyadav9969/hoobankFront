@@ -7,57 +7,54 @@ import { NavLink } from "react-bootstrap";
 const NavBar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
- 
+
   return (
     <div className={header.headerSection}>
-      <div style={{ width: "100%" }}>
-        <nav className={header.navbarSection}>
+      <nav className={header.navbarSection}>
 
-          <div className="" >
+        <div className="" >
+          <img src={logo} alt="hoobank" />
+        </div>
 
-            <img src={logo} alt="hoobank" />
-          </div>
-
-          <ul className={header.navLinkSection}>
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                // className={`${active === nav.title ? header.activeText : header.navLinkText} `}
-                className={`${active === nav.title ? header.activeText : header.navLinkText}`}
-                onClick={() => setActive(nav.title)}
-              >
-                <NavLink href={`#${nav.id}`}>{nav.title}</NavLink>
-              </li>
-            ))}
-          </ul>
-         
-          <div className={header.mobileLink}>
-            <img
-              src={toggle ? close : menu}
-              alt="menu"
-              className=""
-              onClick={() => setToggle(!toggle)}
-            />
-
-            <div
-              // className={`${!toggle ? "d-none" : "d-flex"}`}
-              className={`${!toggle ? header.sideBar +" " + 'd-none'  : header.sideBar  +" " + 'd-flex'}`}
+        <ul className={header.navLinkSection}>
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              // className={`${active === nav.title ? header.activeText : header.navLinkText} `}
+              className={`${active === nav.title ? header.activeText : header.navLinkText}`}
+              onClick={() => setActive(nav.title)}
             >
-              <ul className="list-none flex justify-end items-start flex-1 flex-col">
-                {navLinks.map((nav, index) => (
-                  <li
-                    key={nav.id}
-                    className={`${active === nav.title ? header.activeText : header.navLinkText} ${index === navLinks.length - 1 ? "mb-0" : "mb-3"}`}
-                    onClick={() => setActive(nav.title)}
-                  >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <NavLink href={`#${nav.id}`}>{nav.title}</NavLink>
+            </li>
+          ))}
+        </ul>
+
+        <div className={header.mobileLink}>
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className=""
+            onClick={() => setToggle(!toggle)}
+          />
+
+          <div
+            // className={`${!toggle ? "d-none" : "d-flex"}`}
+            className={`${!toggle ? header.sideBar + " " + 'd-none' : header.sideBar + " " + 'd-flex'}`}
+          >
+            <ul className="list-none flex justify-end items-start flex-1 flex-col">
+              {navLinks.map((nav, index) => (
+                <li
+                  key={nav.id}
+                  className={`${active === nav.title ? header.activeText : header.navLinkText} ${index === navLinks.length - 1 ? "mb-0" : "mb-3"}`}
+                  onClick={() => setActive(nav.title)}
+                >
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              ))}
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   );
 };
