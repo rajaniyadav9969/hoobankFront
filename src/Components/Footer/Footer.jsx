@@ -6,7 +6,7 @@ import dLayout from '../Dynamic.module.scss'
 
 const Footer = () => {
     return (
-        <section className={footer.footerSection}>
+        <section className={`${footer.footerSection} ${dLayout.paddingSection}`}>
             <div className={footer.footerLinkSection}>
                 <div className={footer.logoSection}>
                     <img
