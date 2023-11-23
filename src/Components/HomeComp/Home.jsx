@@ -4,7 +4,7 @@ import style from './Home.module.scss'
 import GetStarted from './GetStarted';
 import { stats } from '../../constants';
 import dLayout from '../Dynamic.module.scss'
-import AOS from 'aos';
+
 
 
 const Home = () => {
@@ -26,21 +26,25 @@ const Home = () => {
                                 <span className={style.textGradent}>Generation</span>{" "}
                             </h1>
                             <div className={style.getStarted}
-                            //  data-aos="zoom-in" 
-                            //     data-aos-easing="linear"
-                            //     data-aos-duration="1500"
-                            data-aos="flip-left"
-                            data-aos-easing="ease-in-out"
-                            data-aos-duration="2000"
-                                >
+                                // data-aos="flip-left"
+                                // data-aos-easing="ease-in-out"
+                                // data-aos-duration="2000"
+                                // data-aos="flip-left"
+                                // data-aos-offset="200"
+                                // data-aos-delay="50"
+                                // data-aos-duration="1000"
+                                // data-aos-easing="ease"
+                                // data-aos-mirror="true"
+                                // data-aos-once="false"
+                            >
                                 <GetStarted />
                             </div>
 
                         </div>
-                        <h1 className={style.heading} data-aos="fade-right"  data-aos-duration="2000">
+                        <h1 className={style.heading} data-aos="fade-right" data-aos-duration="2000">
                             Payment Method.
                         </h1>
-                        <p className={`${dLayout.paragraph} mt-4`} data-aos="fade-right"  data-aos-duration="2000">
+                        <p className={`${dLayout.paragraph} mt-4`} data-aos="fade-right" data-aos-duration="2000">
                             Our team of experts uses a methodology to identify the credit cards
                             most likely to fit your needs. We examine annual percentage rates,
                             annual fees.
@@ -61,10 +65,10 @@ const Home = () => {
             </div>
             <section className={style.countSection} >
                 {stats.map((stat) => (
-                    <div key={stat.id} className={style.singleContent} 
-                    data-aos="zoom-in-down"
-                    //  data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
+                    <div key={stat.id} className={style.singleContent}
+                        data-aos="zoom-in-down"
+                        //  data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <h4 className=" text-white" >
                             {stat.value}
                         </h4>
