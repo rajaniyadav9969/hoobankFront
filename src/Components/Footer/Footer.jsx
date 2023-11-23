@@ -47,13 +47,12 @@ const Footer = () => {
 
                 <div className={footer.socialMediaLink}>
                     {socialMedia.map((social, index) => (
-                        <img
+                        <span
                             key={social.id}
-                            src={social.icon}
                             alt={social.id}
                             className={`${index !== socialMedia.length - 1 ? "me-4" : "me-0"}`}
                             onClick={() => window.open(social.link)}
-                        />
+                        >{social.icon}</span>
                     ))}
                 </div>
             </div>

@@ -20,15 +20,18 @@
     margin-bottom: 0;
     @media screen and (max-width: 768px) {
         max-width: 100%;
+        font-size: 1.08rem;
     }
 }
 .paddingSection{
     padding: 4rem 0;
     @media only screen and (min-width: 1030px) and (max-width: 1566px) {
         padding: 3rem 2rem;
-
+        // width: 90%;
+        // margin: 0 auto;
     }
     @media screen and (max-width: 768px) {
         padding: 1.5rem 0;
+
     }
 }

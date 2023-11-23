@@ -15,7 +15,7 @@ function App() {
     AOS.init({once: false});
     setTimeout(()=>{
       AOS.refresh();
-    }, 2000)
+    }, 1500)
   }, []);
   return (
     <div className="App " style={{}}>

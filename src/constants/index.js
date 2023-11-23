@@ -1,4 +1,7 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { IoShieldCheckmarkSharp, IoStar } from "react-icons/io5";
+import { IoIosSend } from "react-icons/io";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";  
+import { people01, people02, people03, facebook, instagram, linkedin, airbnb, binance, coinbase, dropbox, send, shield  } from "../assets";
 
 export const navLinks = [
   {
@@ -22,21 +25,21 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
+    icon: <IoStar   style={{color: "#5ce1e6"}}/>,
     title: "Rewards",
     content:
       "The best credit cards offer some tantalizing combinations of promotions and prizes",
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: <IoShieldCheckmarkSharp style={{color: "#5ce1e6"}}/>,
     title: "100% Secured",
     content:
       "We take proactive steps make sure your information and transactions are secure.",
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: <IoIosSend style={{color: "#5ce1e6"}}/>,
     title: "Balance Transfer",
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",
@@ -157,22 +160,22 @@ export const footerLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
+    icon: <FaInstagram  style={{color:"#fff"}}/>,
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
-    icon: facebook,
+    icon: <FaFacebook style={{color:"#fff"}}/>,
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
-    icon: twitter,
+    icon: <FaTwitter style={{color:"#fff"}}/>,
     link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
-    icon: linkedin,
+    icon: <FaLinkedin style={{color:"#fff"}}/>,
     link: "https://www.linkedin.com/",
   },
 ];

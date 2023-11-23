@@ -9,12 +9,15 @@ const Client = () => (
     <section id="clients" className={dLayout.paddingSection}>
         <div className={cStyle.clientSection}>
             {/* <div className={cStyle.gradient} /> */}
-            <div className={`row ${cStyle.peopleAre}`} data-aos="fade-up"
+            <div className={`row ${cStyle.peopleAre}`} data-aos="zoom-in"
                 data-aos-duration="2000">
-                <h2 className={`col-md-6 ${dLayout.heading}`}>
-                    What People are <br className="sm:block hidden" /> saying about us
-                </h2>
-                <div className="col-md-6 mt-4">
+                <div className="col-md-6">
+
+                    <h2 className={dLayout.heading}>
+                        What People are  saying about us
+                    </h2>
+                </div>
+                <div className="col-md-6 ">
                     <p className={dLayout.paragraph}>
                         Everything you need to accept card payments and grow your business
                         anywhere on the planet.
@@ -71,7 +74,7 @@ const Client = () => (
             </div>
 
             <div className={cStyle.btnSection}>
-                <Button  />
+                <Button />
             </div>
         </section>
     </section>

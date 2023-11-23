@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { discount, robot } from "../../assets";
+import { bubble, card1, discount } from "../../assets";
 import style from './Home.module.scss'
 import GetStarted from './GetStarted';
 import { stats } from '../../constants';
@@ -12,7 +12,7 @@ const Home = () => {
         <div>
             <div id='home' className={style.homeSection}>
                 <div className={`row ${style.homeTopSection}`}>
-                    <div className={`col-md-7 ${style.homeContent}`}>
+                    <div className={`col-md-6 ${style.homeContent}`}>
                         <div className={`d-flex align-items-center ${style.accountContent}`} data-aos="fade-down">
                             <img src={discount} alt="discount" className={style.responsiveimg} />
                             <p className={`${style.paragraph1} ${dLayout.paragraph} ms-2 mb-0`}  >
@@ -26,16 +26,16 @@ const Home = () => {
                                 <span className={style.textGradent}>Generation</span>{" "}
                             </h1>
                             <div className={style.getStarted}
-                                // data-aos="flip-left"
-                                // data-aos-easing="ease-in-out"
-                                // data-aos-duration="2000"
-                                // data-aos="flip-left"
-                                // data-aos-offset="200"
-                                // data-aos-delay="50"
-                                // data-aos-duration="1000"
-                                // data-aos-easing="ease"
-                                // data-aos-mirror="true"
-                                // data-aos-once="false"
+                            // data-aos="flip-left"
+                            // data-aos-easing="ease-in-out"
+                            // data-aos-duration="2000"
+                            // data-aos="flip-left"
+                            // data-aos-offset="200"
+                            // data-aos-delay="50"
+                            // data-aos-duration="1000"
+                            // data-aos-easing="ease"
+                            // data-aos-mirror="true"
+                            // data-aos-once="false"
                             >
                                 <GetStarted />
                             </div>
@@ -50,8 +50,17 @@ const Home = () => {
                             annual fees.
                         </p>
                     </div>
-                    <div className={`col-md-5 p-0 ${style.generationImgSection}`}>
-                        {/* <img src={robot} alt="billing" className={style.cardImg} /> */}
+                    <div className={`col-md-6 p-0 ${style.generationImgSection}`} 
+                    data-aos="zoom-in"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2000">
+                        <img src={bubble} alt="bubble" className={style.bubble1} />
+                        <div className={style.cardImg} >
+
+                            <img src={card1} alt="card1"  />
+                        </div>
+                        <img src={bubble} alt="bubble" className={style.bubble2} />
+                        <img src={bubble} alt="bubble" className={style.bubble3} />
                         {/* gradient start */}
                         {/* <div className={style.gradient1} />
                 <div className={style.gradient2} />
