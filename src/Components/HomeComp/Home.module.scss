@@ -56,18 +56,29 @@
         background-size: contain;
 
     }
+    @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+        padding-top: 7rem;
+    }
 
     .homeTopSection {
         // max-width: 1380px;
         max-width: 80%;
         margin: 0 auto !important;
-        width: 90%;
+        width: 100%;
 
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
+        @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+            max-width: 100%;
+            padding: 0 2.6rem;
+
+        }
         .homeContent {
             padding: 0;
 
             @media only screen and (min-width: 1030px) and (max-width: 1566px) {
-                padding: 0 2rem;
+                // padding: 0 2rem;
             }
 
             @media screen and (max-width: 768px) {
@@ -143,13 +154,11 @@
                 @media only screen and (min-width: 1030px) and (max-width: 1566px) {
                     max-width: 90%;
                 }
+
+                @media screen and (max-width: 768px) {
+                    max-width: 100%;
+                }
             }
-
-            h1 {
-                max-width: 80%;
-            }
-
-
 
             .heading {
                 color: rgb(255 255 255 /1);
@@ -158,12 +167,14 @@
                 // line-height: 100.8px;
                 // max-width: 70%;
                 // margin-bottom: 0;
+                max-width: 80%;
                 line-height: 1.1;
 
                 @media screen and (max-width: 768px) {
                     font-size: 3.25rem;
                     line-height: 1.2;
                     margin-bottom: 0;
+                    max-width: 100%;
                 }
 
                 @media only screen and (min-width: 1030px) and (max-width: 1566px) {
@@ -192,7 +203,7 @@
 
             // pointer-events: none;
             @media screen and (max-width: 768px) {
-                transform: translateX(0%) translateY(15%);
+                transform: translateX(0%) translateY(10%);
 
             }
 
@@ -236,8 +247,6 @@
                 justify-content: center;
                 margin-top: 4.5rem;
                 animation: float 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
-
-
             }
         }
 
@@ -272,6 +281,8 @@
 
                 @media screen and (max-width:768px) {
                     width: 55px;
+                    top: 0;
+                    left: 7%;
                 }
 
             }
@@ -283,7 +294,7 @@
                 // left: 8rem;
                 // bottom: 6.5rem;
                 left: 33%;
-    bottom: 30%;
+                bottom: 30%;
                 animation: bubble2float 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
 
                 @media only screen and (min-width: 1030px) and (max-width: 1566px) {
@@ -292,8 +303,8 @@
 
                 @media screen and (max-width:768px) {
                     width: 24px;
-                    left: 5rem;
-                    bottom: 0;
+                    left: 18%;
+                    bottom: 5%;
                 }
 
             }
@@ -309,8 +320,8 @@
 
                 @media screen and (max-width:768px) {
                     width: 45px;
-                    bottom: 0;
-                    right: 5rem;
+                    bottom: 5%;
+                    right: 21%;
                 }
             }
 
@@ -334,6 +345,11 @@
 
                     @media only screen and (min-width: 1030px) and (max-width: 1566px) {
                         width: 82%;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        transform: unset;
+
                     }
 
                 }
@@ -390,10 +406,10 @@
     margin: 0 auto;
     width: 100%;
     margin-bottom: 5rem;
-
     @media only screen and (min-width: 1030px) and (max-width: 1566px) {
-        padding: 4rem 2rem 3rem 2rem;
+        padding: 4rem 2.6rem 3rem 2.6rem;
         margin-bottom: 0;
+        max-width: 100%;
 
     }
 
@@ -402,6 +418,8 @@
         margin-bottom: 1.5rem;
         flex-wrap: wrap;
         margin-top: 2rem;
+        max-width: 100%;
+
 
 
     }

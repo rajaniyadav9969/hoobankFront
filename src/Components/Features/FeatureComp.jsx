@@ -27,8 +27,13 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const FeatureComp = () => (
-  <section id="features" className={`row ${fStyle.fsection} ${dLayout.paddingSection}`} >
-    <div className={`col-md-6 ${fStyle.fSectionInfo}`} data-aos="fade-right"
+  <section
+    id="features"
+    className={`row ${fStyle.fsection} ${dLayout.paddingSection}`}
+  >
+    <div
+      className={`col-md-6 ${fStyle.fSectionInfo}`}
+      data-aos="fade-right"
       //  data-aos-easing="ease-out-cubic"
       data-aos-duration="2000">
       <h2 className={dLayout.heading}>

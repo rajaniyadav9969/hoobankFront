@@ -12,7 +12,6 @@ const Client = () => (
             <div className={`row ${cStyle.peopleAre}`} data-aos="zoom-in"
                 data-aos-duration="2000">
                 <div className="col-md-6">
-
                     <h2 className={dLayout.heading}>
                         What People are  saying about us
                     </h2>
@@ -28,7 +27,9 @@ const Client = () => (
             <div className={cStyle.cardSection}>
                 {/* {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)} */}
                 {feedback.map((card) => {
-                    return <div key={card.id} className={cStyle.singleCard}
+                    return <div
+                        key={card.id}
+                        className={cStyle.singleCard}
                         data-aos="fade-up"
                         data-aos-duration="2000">
                         <img src={quotes} alt="double_quotes" className={cStyle.quotesImg} />
@@ -51,10 +52,12 @@ const Client = () => (
             </div>
         </div>
 
-        <div className="my-4">
+        <div className="mb-5">
             <div className={cStyle.clientLogoSection}>
                 {clients.map((client) => (
-                    <div key={client.id} className={`${cStyle.singleClientLogo} m-4`}
+                    <div
+                        key={client.id}
+                        className={`${cStyle.singleClientLogo} m-4`}
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
@@ -63,9 +66,11 @@ const Client = () => (
                 ))}
             </div>
         </div>
-        <section className={cStyle.tryOurServices} data-aos="zoom-in"
-            data-aos-duration="2000">
-            <div className="">
+        <section className={cStyle.tryOurServices}
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+        >
+            <div className={cStyle.content}>
                 <h2 className={dLayout.heading}>Let’s try our service now!</h2>
                 <p className={`${dLayout.paragraph} `}>
                     Everything you need to accept card payments and grow your business
