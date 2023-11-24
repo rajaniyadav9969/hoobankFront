@@ -14,7 +14,7 @@
     }
 
     100% {
-        transform: translateY(90px) translateX(55px);
+        transform: translateY(110px) translateX(55px);
     }
 }
 
@@ -24,6 +24,7 @@
     }
 
     100% {
+        // transform: translateY(-160px) translateX(-150px);
         transform: translateY(-160px) translateX(-150px);
     }
 }
@@ -34,6 +35,7 @@
     }
 
     100% {
+        // transform: translateY(10px) translateX(-100px);
         transform: translateY(10px) translateX(-100px);
     }
 }
@@ -56,9 +58,10 @@
     }
 
     .homeTopSection {
-        max-width: 1380px;
+        // max-width: 1380px;
+        max-width: 80%;
         margin: 0 auto !important;
-        width: 100%;
+        width: 90%;
 
         .homeContent {
             padding: 0;
@@ -129,15 +132,23 @@
 
                 }
 
-
                 // .heading {
                 //     padding-top: 1.5rem;
                 // }
             }
 
-            // p {
-            //     max-width: 60%;
-            // }
+            p {
+                max-width: 60%;
+
+                @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+                    max-width: 90%;
+                }
+            }
+
+            h1 {
+                max-width: 90%;
+            }
+
 
 
             .heading {
@@ -183,7 +194,10 @@
             @media screen and (max-width: 768px) {
                 transform: translateX(0%) translateY(15%);
 
+            }
 
+            @media only screen and (min-width: 1030px) and (max-width: 1566px) {
+                transform: translateY(25%);
             }
 
             .getStartedContent {
@@ -246,8 +260,10 @@
             .bubble1 {
                 width: 70px;
                 position: absolute;
-                left: 5rem;
-                top: 0rem;
+                // left: 5rem;
+                // top: 0rem;
+                left: 22%;
+                top: 6%;
                 animation: bubble1float 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
 
                 @media only screen and (min-width: 1030px) and (max-width: 1566px) {
@@ -264,8 +280,10 @@
             .bubble2 {
                 width: 30px;
                 position: absolute;
-                left: 8rem;
-                bottom: 6.5rem;
+                // left: 8rem;
+                // bottom: 6.5rem;
+                left: 33%;
+    bottom: 30%;
                 animation: bubble2float 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
 
                 @media only screen and (min-width: 1030px) and (max-width: 1566px) {
@@ -283,8 +301,10 @@
             .bubble3 {
                 width: 55px;
                 position: absolute;
-                right: 8.6rem;
-                bottom: 7.6rem;
+                // right: 8.6rem;
+                // bottom: 7.6rem;
+                right: 8%;
+                bottom: 30%;
                 animation: bubble3float 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
 
                 @media screen and (max-width:768px) {
@@ -303,10 +323,13 @@
             }
 
             .cardImg {
+                display: flex;
+                justify-content: center;
 
                 img {
-                    width: 75%;
-                    height: 75%;
+                    // width: 75%;
+                    width: 80%;
+                    // height: 75%;
                     transform: translateY(6%) translateX(18%);
 
                     @media only screen and (min-width: 1030px) and (max-width: 1566px) {
@@ -362,7 +385,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1380px;
+    // max-width: 1380px;
+    max-width: 80%;
     margin: 0 auto;
     width: 100%;
     margin-bottom: 5rem;

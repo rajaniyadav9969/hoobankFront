@@ -40,7 +40,6 @@ const FeatureComp = () => (
         building credit, earning rewards and saving money. But with hundreds
         of credit cards on the market.
       </p>
-
       <Button />
     </div>
 
