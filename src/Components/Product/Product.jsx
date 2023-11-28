@@ -4,11 +4,18 @@ import dLayout from '../Dynamic.module.scss'
 
 
 const Product = () => (
-  <section id="product" className={`row ${layout.sectionReverse} ${dLayout.paddingSection} ${layout.productSection}`}>
+  <section
+    id="product"
+    className={`row ${layout.sectionReverse} ${dLayout.paddingSection} ${layout.productSection}`}
+  >
     <div className={`col-md-6 ${layout.sectionImgReverse}`}
-     data-aos="zoom-in"
+      data-aos="zoom-in"
       data-aos-duration="2000">
-      <img src={bill} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <img
+        src={bill}
+        alt="billing"
+        className="w-[100%] h-[100%] relative z-[5]"
+      />
 
       {/* gradient start */}
       {/* <div className={layout.gradient} />

@@ -204,6 +204,7 @@
             // pointer-events: none;
             @media screen and (max-width: 768px) {
                 transform: translateX(0%) translateY(10%);
+                box-shadow: 4px 2px 15px 0px #5ce1e670;
 
             }
 
@@ -220,6 +221,7 @@
                 width: 100%;
                 height: 100%;
                 flex-direction: column;
+                text-decoration: none;
 
                 .textGradent {
                     font-weight: 500;

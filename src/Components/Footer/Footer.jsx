@@ -6,7 +6,9 @@ import dLayout from '../Dynamic.module.scss'
 
 const Footer = () => {
     return (
-        <section className={`${footer.footerSection} ${dLayout.paddingSection}`}>
+        <section
+            className={`${footer.footerSection} ${dLayout.paddingSection}`}
+        >
             <div className={footer.footerLinkSection}>
                 <div className={footer.logoSection}>
                     <img
@@ -21,7 +23,10 @@ const Footer = () => {
 
                 <div className={footer.footerLinkContent}>
                     {footerLinks.map((footerlink) => (
-                        <div key={footerlink.title} className={footer.footerCategory}>
+                        <div
+                            key={footerlink.title}
+                            className={footer.footerCategory}
+                        >
                             <h4 className="">
                                 {footerlink.title}
                             </h4>

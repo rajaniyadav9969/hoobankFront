@@ -2,7 +2,15 @@ import { useEffect, useState } from "react";
 import { close, logo, menu } from "../../assets";
 import { navLinks } from "../../constants";
 import header from './NavBar.module.scss'
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-bootstrap";
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 const NavBar = () => {
   const [active, setActive] = useState("Home");
@@ -24,7 +32,13 @@ const NavBar = () => {
               className={`${active === nav.title ? header.activeText : header.navLinkText}`}
               onClick={() => setActive(nav.title)}
             >
-              <NavLink href={`#${nav.id}`}>{nav.title}</NavLink>
+              {/* <NavLink href={`#${nav.id}`}>{nav.title}</NavLink> */}
+              <NavLink
+                to={`#${nav.id}`}
+                onClick={() => scrollToSection(nav.id)}
+              >
+                {nav.title}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -48,7 +62,12 @@ const NavBar = () => {
                   className={`${active === nav.title ? header.activeText : header.navLinkText} ${index === navLinks.length - 1 ? "mb-0" : "mb-3"}`}
                   onClick={() => setActive(nav.title)}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <NavLink
+                    to={`#${nav.id}`}
+                    onClick={() => scrollToSection(nav.id)}
+                  >
+                    {nav.title}
+                  </NavLink>
                 </li>
               ))}
             </ul>

@@ -1,20 +1,21 @@
 import { arrowUp } from "../../assets";
 import style from './Home.module.scss'
+import { Link, NavLink } from "react-router-dom";
 
 const GetStarted = () => (
   <div className={style.getStartedSection}>
-    <div className={style.getStartedContent}>
+    <NavLink
+      className={style.getStartedContent}
+      target="blank" to="http://www.linkedin.com/in/rajani-yadav-758225183"
+    >
       <div className={style.getContent}>
-        {/* <p className="font-poppins font-medium text-[18px] leading-[23.4px]"> */}
-          <span className={style.textGradent}>Get</span>
-        {/* </p> */}
+        <span className={style.textGradent}>Get</span>
         <img src={arrowUp} alt="arrow-up" className="" />
       </div>
-      
       <p className="">
         <span className={style.textGradent}>Started</span>
       </p>
-    </div>
+    </NavLink>
   </div>
 );
 

@@ -24,7 +24,9 @@ const Home = () => {
                             </p>
                         </div>
                         <div className={style.generationContent} >
-                            <h1 className={style.heading} data-aos="fade-right">
+                            <h1
+                                className={style.heading}
+                                data-aos="fade-right">
                                 The Next <br className="" />{" "}
                                 <span className={style.textGradent}>Generation</span>{" "}
                             </h1>
@@ -87,21 +89,21 @@ const Home = () => {
             </div>
             <section className={style.countSection} >
                 {/* <div className={style.countContent}> */}
-                    {stats.map((stat) => (
-                        <div
-                            key={stat.id}
-                            className={style.singleContent}
-                            data-aos="zoom-in-down"
-                            //  data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <h4 className=" text-white" >
-                                {stat.value}
-                            </h4>
-                            <p className={style.textGradent}>
-                                {stat.title}
-                            </p>
-                        </div>
-                    ))}
+                {stats.map((stat) => (
+                    <div
+                        key={stat.id}
+                        className={style.singleContent}
+                        data-aos="zoom-in-down"
+                        //  data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <h4 className=" text-white" >
+                            {stat.value}
+                        </h4>
+                        <p className={style.textGradent}>
+                            {stat.title}
+                        </p>
+                    </div>
+                ))}
                 {/* </div> */}
             </section>
         </div>

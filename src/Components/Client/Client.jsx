@@ -9,8 +9,11 @@ const Client = () => (
     <section id="clients" className={dLayout.paddingSection}>
         <div className={cStyle.clientSection}>
             {/* <div className={cStyle.gradient} /> */}
-            <div className={`row ${cStyle.peopleAre}`} data-aos="zoom-in"
-                data-aos-duration="2000">
+            <div
+                className={`row ${cStyle.peopleAre}`}
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+            >
                 <div className="col-md-6">
                     <h2 className={dLayout.heading}>
                         What People are  saying about us
@@ -32,12 +35,20 @@ const Client = () => (
                         className={cStyle.singleCard}
                         data-aos="fade-up"
                         data-aos-duration="2000">
-                        <img src={quotes} alt="double_quotes" className={cStyle.quotesImg} />
+                        <img
+                            src={quotes}
+                            alt="double_quotes"
+                            className={cStyle.quotesImg}
+                        />
                         <p className={dLayout.paragraph}>
                             {card.content}
                         </p>
                         <div className={cStyle.clientInfo}>
-                            <img src={card.img} alt={card.name} className="" />
+                            <img
+                                src={card.img}
+                                alt={card.name}
+                                className=""
+                            />
                             <div className="ms-3">
                                 <h4 className="mb-0 text-white">
                                     {card.name}
@@ -61,7 +72,11 @@ const Client = () => (
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
-                        <img src={client.logo} alt="client_logo" className="" />
+                        <img
+                            src={client.logo}
+                            alt="client_logo"
+                            className=""
+                        />
                     </div>
                 ))}
             </div>

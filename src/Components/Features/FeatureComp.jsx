@@ -6,7 +6,9 @@ import fStyle from './Features.module.scss'
 import dLayout from '../Dynamic.module.scss'
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={fStyle.featureCard} data-aos="zoom-in"
+  <div
+    className={fStyle.featureCard}
+    data-aos="zoom-in"
     //  data-aos-easing="ease-out-cubic"
     data-aos-duration="2000">
     <div className={fStyle.imgContent}>
