@@ -11,7 +11,9 @@ body {
 code {
   font-family: 'Poppins', sans-serif;
 }
-
+.App{
+  overflow-x: hidden;
+}
 .containers {
   /* padding-top: 4rem; */
   /* max-width: 1380px; */
