@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(0 4 15 / 1) !important;
+  overflow-x: hidden;
+
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+}
+.App{
+  overflow-x: hidden;
+}
+.containers {
+  /* padding-top: 4rem; */
+  /* max-width: 1380px; */
+  max-width: 80%;
+  margin: 0 auto !important;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1566px) {
+  .containers{
+    max-width: 100%;
+      /* padding: 0 2.6rem; */
+    
+
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .containers {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 100%;
+
+  }
+}
+
+.scrollToTop{
+  position: fixed;
+  top: 80%;
+  right: 0.5rem;
+  z-index: 1;
+  button{
+    border: none;
+    border-radius: 50%;
+    width: 2.8rem;
+    display: grid;
+    align-items:center ;
+    justify-content: center;
+    height: 2.8rem;
+    svg{
+      font-size: 2.6rem;
+      fill: #0d4528;
+    }
+  }
+}
